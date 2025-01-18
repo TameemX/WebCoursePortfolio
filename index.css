@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../Fonts/SpoofTrialVF.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Salam Professor, the work has yet to be fisnihed but I am still practicing some styling things regarding the project. */
+body {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'MyCustomFont', monospace;
+    padding: 5px;
+}
+
+.my-header {
+    position: sticky;
+    color: black;
+    background-color: aliceblue;
+    top: 0;
+    padding: 10px;
+    height: 60px;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    justify-content: space-between;
+    z-index: 10;
+    display: flex;
+}
+
+.my-header nav li a{
+    text-decoration: none;
+    list-style-type: none;
+    border-radius: 5px; 
+    color: black; 
+    background-color: transparent; 
+    transition: all 0.3s ease; 
+}
+
+.my-header nav li a:hover {
+    background-color: black; 
+    color: white; 
+    padding: 3px 10px; 
+
+}
+
+.my-header img {
+    size: 40px;
+}
+
+.my-header nav {
+    margin-top: 5px;
+    display: flex;
+}
+
+.my-header nav li {
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.my-header button {
+    border: 0px;
+    font-family: 'MyCustomFont', monospace;
+    font-size: 20px;
+}
+
+#MAIN {
+    display: flex;
+    justify-content: center;
+}
+#MAIN img {
+
+    width: 1150px;
+    margin-left: 150px;
+}
+
+
+#SERVICES article img {
+    width: 50%;
+    display: block;
+}
+
+#SERVICES h2 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#SERVICES h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+#SERVICES p {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#SERVICES article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+#SERVICES article:hover {
+    transform: translateY(5px); 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
+
+
+#EXPERIENCE {
+    text-align: center;
+    padding: 40px;
+}
+
+#EXPERIENCE img {
+    margin: auto;
+}
+
+#EXPERIENCE h2 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#EXPERIENCE h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+#SKILLS {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+#SKILLS div {
+    border: 1px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+
+#SKILLS ul {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    width: fit-content;
+    text-align: center;
+}
+
+#SKILLS {
+    padding-left: 225px;
+    padding-right: 225px;
+}
+
+#SKILLS h2 {
+    text-align: center;
+}
+
+#SKILLS h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+#SKILLS ul li {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: transparent; 
+    color: black; 
+    transition: all 0.3s ease-in-out; 
+}
+
+#SKILLS ul li:hover {
+    background-color: black; 
+    color: white; 
+    transform: translateY(5px); 
+
+}
+
+#PROJECTS {
+    margin-bottom: 100px;
+    margin-bottom: 200px;
+}
+.projects_cont {
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#PROJECTS h2 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#PROJECTS h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+#PROJECTS article {
+    
+    gap: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+
+transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+#PROJECTS article:hover {
+    transform: translateY(5px); 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
+
+#PROJECTS article p {
+    font-weight: 100;
+}
+
+#PROJECTS article button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'MyCustomFont', monospace;
+}
+
+#PROJECTS article button:hover {
+    background-color: white; 
+    color: black; 
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 0.5s ease; 
+
+}
+
+#PROJECTS article img {
+
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 0 auto 10px;
+    box-sizing: border-box;
+
+}
+
+#PROJECTS article p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.my-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding: 40px;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-left h2 {
+    font-size: 55px;
+    margin: 0 0 10px 0;
+}
+
+.footer-left p {
+    font-size: 14px;
+    max-width: 60%;
+    font-weight: 100;
+}
+
+.footer-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-center button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'MyCustomFont', monospace;
+
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
